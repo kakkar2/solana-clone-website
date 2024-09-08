@@ -14,10 +14,10 @@ const BuildHeroSection = () => {
             A manual for joining the Solana ecosystem. By builders for builders.
           </p>
           <div className="flex items-center gap-5">
-            <button className="px-4 py-2 md:px-5 md:py-2 lg:px-8 lg:py-3 bg-green-500 text-black hover:bg-white rounded-full transition duration-300 ease-in-out uppercase hover:-translate-y-2">
+            <button className="px-4 py-2 md:px-5 md:py-2 lg:px-6 lg:py-3 bg-green-500 text-black hover:bg-white rounded-full transition duration-300 ease-in-out uppercase hover:-translate-y-2">
               Build Now
             </button>
-            <button className="px-4 py-2 md:px-5 md:py-2 lg:px-8 lg:py-3 rounded-full transition duration-300 ease-in-out border uppercase hover:bg-white hover:text-black hover:-translate-y-2">
+            <button className="px-4 py-2 md:px-5 md:py-2 lg:px-6 lg:py-3 rounded-full transition duration-300 ease-in-out border uppercase hover:bg-white hover:text-black hover:-translate-y-2">
               Stack Exchange <FontAwesomeIcon icon={faStackExchange} />
             </button>
           </div>
