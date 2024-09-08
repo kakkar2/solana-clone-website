@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black text-white;
+  overflow-x: hidden !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.active {
+  color: white !important;
+}
+
+#heroSection::before {
+  content: "";
+  background-image: url("assets/ring.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  transform: rotate(90deg);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#heroSection::after {
+  content: "";
+  background-image: url("assets/ring.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+  object-fit: fill;
+  z-index: -1;
+}
+
+#live,
+#endSection {
+  background-image: url("assets/arc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-gray-transparent {
+  background: linear-gradient(
+    213deg,
+    hsla(0, 0%, 100%, 0.03),
+    hsla(0, 0%, 100%, 0.05) 49.48%,
+    hsla(0, 0%, 100%, 0.03)
+  );
+  backdrop-filter: blur(12px);
+}
+
+/* build page css start here  */
+
+.build_heroSection::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: -50px;
+  left: auto;
+  width: 600px;
+  height: 600px;
+  padding-bottom: 0;
+  filter: blur(110px);
+  transform: rotate(35.57deg);
+  background: #f087ff;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
+
+.learnItem {
+  position: relative;
+  background-color: rgba(9, 10, 12, 0.96) !important;
+  background-repeat: no-repeat !important;
+  background-size: auto 100% !important;
+  background-position: right center !important;
+  height: 400px;
+  z-index: 1;
+}
+
+.full-Span {
+  grid-column: 1 / 4;
+}
+
+.learnItem::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 70%;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(9, 10, 12, 0.96) 87.44%
+  );
+  transition: opacity 0.3s ease;
+}
+
+.learnItem:hover::after {
+  opacity: 0;
+}
+
+.learnItem {
+  background: url("./assets/solana-dev-course.png");
+}
+
+.learnItem1,
+.learnItem2,
+.learnItem3,
+.learnItem4,
+.learnItem5,
+.learnItem6 {
+  height: 350px;
+}
+
+.learnItem1 {
+  background: url("./assets/shape-1.png") !important;
+}
+.learnItem2 {
+  background: url("./assets/shape-2.png") !important;
+}
+.learnItem3 {
+  background: url("./assets/shape-3.png") !important;
+}
+.learnItem4 {
+  background: url("./assets/shape-4.png") !important;
+}
+.learnItem5,
+.learnItem6 {
+  background: url("./assets/shape-5.png") !important;
+}
+
+.digCard {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.digCard::before {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: translateX(-50%);
+  bottom: -45%;
+  left: 50%;
+  background: radial-gradient(#9945ff, transparent 70%);
+  width: 100%;
+  height: 175px;
+  border-radius: 50%;
+}
+
+.digCard:hover::before {
+  opacity: 1;
+}
+
+/* responsive css  */
+
+@media only screen and (max-width: 600px) {
+  .full-Span {
+    grid-column: 1 / 1;
+  }
+  .build_heroSection::after {
+    width: 300px;
+    height: 300px;
+  }
+  #heroSection::before {
+    width: 50%;
+  }
+  #heroSection::after {
+    width: 60%;
+  }
+  .menu-list {
+    top: 100%;
+    left: 0;
+    background: black;
+    opacity: 0.9;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  .menu-list li {
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+  }
+}
