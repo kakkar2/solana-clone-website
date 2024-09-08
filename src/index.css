@@ -198,7 +198,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 850px) {
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
   .full-Span {
     grid-column: 1 / 1;
   }
