@@ -72,7 +72,7 @@ const CommunitySection = () => {
       {/* community section end here  */}
       {/* live data section start here  */}
       <div className="mb-10" id="live">
-        <div className="lg:flex justify-between flex-wrap max-w-screen-xl py-32 mx-auto gap-5">
+        <div className="lg:flex md:flex justify-between flex-wrap max-w-screen-xl py-32 mx-auto gap-5">
           <div className="flex-1 text-center">
             <h2 className="text-3xl lg:text-4xl self-start mb-2">
               Made for <span className="block">mass adoption.</span>

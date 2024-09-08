@@ -46,7 +46,7 @@ const TabContent = ({ activeTab }) => {
   return (
     <>
       <div className="flex flex-wrap flex-col-reverse lg:flex-row items-center mb-5">
-        <div className="flex-1">
+        <div className="flex-1 md:w-full">
           <img
             src={tabImage}
             className="w-full h-full object-cover"

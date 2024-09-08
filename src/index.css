@@ -197,3 +197,21 @@ body {
     border-bottom: 1px solid gray;
   }
 }
+
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+  .full-Span {
+    grid-column: 1 / 1;
+  }
+  .menu-list {
+    top: 100%;
+    left: 0;
+    background: black;
+    opacity: 0.9;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  .menu-list li {
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+  }
+}
